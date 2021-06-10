@@ -1,0 +1,38 @@
+Assignment 1 
+
+Step 1
+In this step have a if statement to check if the number of arguments is equal to 2. If not, the usage function will print “ YYYYMMDD | YYYY/MM/DD | YYYY-MM-DD | YYYY.MM.DD” and then the module will be exited.
+
+Step 2
+If there are two arguments created the script will continue. An array will be created called ‘month_name’ storing all the months from Jan-Dec. A hash table will also be created called ‘days_in_month’. Storing the month number and the number of days in that month, example: January will be stored as {1:31}. The first argument of the module will also be stored in a variable ‘user_raw_data’.
+
+Step 3
+
+The allowed variable is declared in the allow_char variable. Then the sanitize function will run with argument (user_raw_data, allow_chars), storing the output into variable ‘dob’. The result will be printed in the format ‘Sanitized user data: ‘, dob.
+
+
+Step 4
+
+Size_check function will run with argument (dob,8) and be stored in the variable called ‘result’. An if statement will then print “Error 09: wrong data entered” if the dob character length is not equal to 8, then exit the module.
+
+
+Step 5
+
+If the variable result I true then the script will continue, and the year, month, and day variable will be made with integer values of dob [0:4], dob [4:6], and dob [6: ] assigned to the previous listed variables in the am order.
+
+Step 6
+
+The function range_check will be used to check for four key details. 
+If the year is within the range of 1900 to 1999, 
+if not the then the module will print an error message “Error 10: year out of range, must be 1900 or later” and then will exit the module. 
+If the month I between 1-12, if not the module will print “Error 02: Wrong month entered” and then will exit. 
+If the leap year function comes back true then an extra day will be added into February. 
+If the day is not specified within that range that I in the days of the month then module will print “Error 03: wrong day entered” and then exit. all values show on return in this step will be put in the variable call ‘result’.
+
+Step 7
+
+The new standard format of “mmm d, yyyy” is created for the dob, saved in variable ‘new_dob’
+
+Step 8
+
+The module will print (“Your date of birth is: “ , new_dob).
